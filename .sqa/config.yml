@@ -1,0 +1,46 @@
+config:
+  credentials: []
+  project_repos:
+    github.com/EOSC-synergy/sqaaas-tooling:
+      branch: main
+      repo: https://github.com/EOSC-synergy/sqaaas-tooling
+    github.com/PTsolvers/JustRelax.jl:
+      branch: main
+      repo: https://github.com/PTsolvers/JustRelax.jl
+environment:
+  JPL_DOCKERFORCEBUILD: enabled
+  JPL_KEEPGOING: enabled
+sqa_criteria:
+  QC.Acc:
+    repos:
+      github.com/PTsolvers/JustRelax.jl git:
+        commands:
+        - /usr/bin/env sh .sqa/script.wimpy-emerald-reindeer.sh
+        container: qc.acc_hasty-ruby-nightingale
+  QC.Doc:
+    repos:
+      github.com/PTsolvers/JustRelax.jl find_doc_files.py:
+        commands:
+        - /usr/bin/env sh .sqa/script.scummy-cobalt-starfish.sh
+        container: qc.doc_paltry-amber-ibis
+      github.com/PTsolvers/JustRelax.jl git:
+        commands:
+        - /usr/bin/env sh .sqa/script.snoopy-chocolate-wolfhound.sh
+        container: qc.doc_skanky-cinnabar-cuscus
+      github.com/PTsolvers/JustRelax.jl markdownlint:
+        commands:
+        - /usr/bin/env sh .sqa/script.cranky-coral-turtle.sh
+        container: qc.doc_scaly-chocolate-donkey
+  QC.Lic:
+    repos:
+      github.com/PTsolvers/JustRelax.jl licensee:
+        commands:
+        - /usr/bin/env sh .sqa/script.snoopy-cerulean-chinchilla.sh
+        container: qc.lic_breezy-eggplant-dragon
+  QC.Ver:
+    repos:
+      github.com/PTsolvers/JustRelax.jl get_git_tags.py:
+        commands:
+        - /usr/bin/env sh .sqa/script.clammy-magnolia-angelfish.sh
+        container: qc.ver_clammy-auburn-gopher
+timeout: 5400
