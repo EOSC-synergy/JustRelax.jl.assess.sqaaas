@@ -15,32 +15,28 @@ sqa_criteria:
     repos:
       github.com/PTsolvers/JustRelax.jl git:
         commands:
-        - /usr/bin/env sh .sqa/script.wimpy-emerald-reindeer.sh
-        container: qc.acc_hasty-ruby-nightingale
+        - /usr/bin/env sh .sqa/script.lanky-aquamarine-centipede.sh
+        container: qc.acc_messy-cobalt-terrier
   QC.Doc:
     repos:
       github.com/PTsolvers/JustRelax.jl find_doc_files.py:
         commands:
-        - /usr/bin/env sh .sqa/script.scummy-cobalt-starfish.sh
-        container: qc.doc_paltry-amber-ibis
+        - /usr/bin/env sh .sqa/script.pasty-taupe-turtle.sh
+        container: qc.doc_nerdy-apricot-bat
       github.com/PTsolvers/JustRelax.jl git:
         commands:
-        - /usr/bin/env sh .sqa/script.snoopy-chocolate-wolfhound.sh
-        container: qc.doc_skanky-cinnabar-cuscus
-      github.com/PTsolvers/JustRelax.jl markdownlint:
-        commands:
-        - /usr/bin/env sh .sqa/script.cranky-coral-turtle.sh
-        container: qc.doc_scaly-chocolate-donkey
+        - /usr/bin/env sh .sqa/script.seedy-teal-sheepdog.sh
+        container: qc.doc_geeky-lilac-goose
   QC.Lic:
     repos:
       github.com/PTsolvers/JustRelax.jl licensee:
         commands:
-        - /usr/bin/env sh .sqa/script.snoopy-cerulean-chinchilla.sh
-        container: qc.lic_breezy-eggplant-dragon
+        - /usr/bin/env sh .sqa/script.baggy-salmon-badger.sh
+        container: qc.lic_freaky-corn-jackal
   QC.Ver:
     repos:
       github.com/PTsolvers/JustRelax.jl get_git_tags.py:
         commands:
-        - /usr/bin/env sh .sqa/script.clammy-magnolia-angelfish.sh
-        container: qc.ver_clammy-auburn-gopher
+        - /usr/bin/env sh .sqa/script.scaly-mustard-kudu.sh
+        container: qc.ver_sleepy-gamboge-armadillo
 timeout: 5400
