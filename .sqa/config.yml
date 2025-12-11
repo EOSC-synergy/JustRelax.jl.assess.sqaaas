@@ -15,32 +15,32 @@ sqa_criteria:
     repos:
       github.com/PTsolvers/JustRelax.jl git:
         commands:
-        - /usr/bin/env sh .sqa/script.nerdy-rose-beagle.sh
-        container: qc.acc_wheezy-beige-binturong
+        - /usr/bin/env sh .sqa/script.shaky-gold-peccary.sh
+        container: qc.acc_ugly-goldenrod-bullfrog
   QC.Doc:
     repos:
       github.com/PTsolvers/JustRelax.jl find_doc_files.py:
         commands:
-        - /usr/bin/env sh .sqa/script.dorky-scarlet-caracal.sh
-        container: qc.doc_gamy-platinum-buffalo
+        - /usr/bin/env sh .sqa/script.skanky-silver-dugong.sh
+        container: qc.doc_zippy-coral-wasp
       github.com/PTsolvers/JustRelax.jl git:
         commands:
-        - /usr/bin/env sh .sqa/script.thirsty-firebrick-ibis.sh
-        container: qc.doc_greasy-pink-orangutan
+        - /usr/bin/env sh .sqa/script.breezy-black-mayfly.sh
+        container: qc.doc_dorky-pink-akita
       github.com/PTsolvers/JustRelax.jl markdownlint:
         commands:
-        - /usr/bin/env sh .sqa/script.trippy-beige-mule.sh
-        container: qc.doc_slimy-coral-rat
+        - /usr/bin/env sh .sqa/script.freaky-taupe-octopus.sh
+        container: qc.doc_cranky-silver-dolphin
   QC.Lic:
     repos:
       github.com/PTsolvers/JustRelax.jl licensee:
         commands:
-        - /usr/bin/env sh .sqa/script.queasy-peach-coyote.sh
-        container: qc.lic_sloppy-persimmon-angelfish
+        - /usr/bin/env sh .sqa/script.goopy-charcoal-quail.sh
+        container: qc.lic_nerdy-fuchsia-bonobo
   QC.Ver:
     repos:
       github.com/PTsolvers/JustRelax.jl get_git_tags.py:
         commands:
-        - /usr/bin/env sh .sqa/script.snazzy-pear-birman.sh
-        container: qc.ver_sickly-white-devil
+        - /usr/bin/env sh .sqa/script.lumpy-aquamarine-labradoodle.sh
+        container: qc.ver_zippy-mustard-tarsier
 timeout: 5400
