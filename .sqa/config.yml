@@ -15,32 +15,28 @@ sqa_criteria:
     repos:
       github.com/PTsolvers/JustRelax.jl git:
         commands:
-        - /usr/bin/env sh .sqa/script.silly-plum-coral.sh
-        container: qc.acc_snoopy-viridian-hyrax
+        - /usr/bin/env sh .sqa/script.beady-alizarin-badger.sh
+        container: qc.acc_crappy-lime-tamarin
   QC.Doc:
     repos:
       github.com/PTsolvers/JustRelax.jl find_doc_files.py:
         commands:
-        - /usr/bin/env sh .sqa/script.seedy-amethyst-neanderthal.sh
-        container: qc.doc_blurry-lavender-tortoise
+        - /usr/bin/env sh .sqa/script.muggy-magnolia-sheep.sh
+        container: qc.doc_breezy-lavender-starfish
       github.com/PTsolvers/JustRelax.jl git:
         commands:
-        - /usr/bin/env sh .sqa/script.skanky-razzmatazz-eagle.sh
-        container: qc.doc_flimsy-burgundy-earwig
-      github.com/PTsolvers/JustRelax.jl markdownlint:
-        commands:
-        - /usr/bin/env sh .sqa/script.shaky-grey-walrus.sh
-        container: qc.doc_pokey-copper-wolfhound
+        - /usr/bin/env sh .sqa/script.leaky-copper-schnauzer.sh
+        container: qc.doc_pasty-seashell-burmese
   QC.Lic:
     repos:
       github.com/PTsolvers/JustRelax.jl licensee:
         commands:
-        - /usr/bin/env sh .sqa/script.surly-emerald-falcon.sh
-        container: qc.lic_pokey-pumpkin-butterfly
+        - /usr/bin/env sh .sqa/script.skinny-emerald-uakari.sh
+        container: qc.lic_cheeky-white-malamute
   QC.Ver:
     repos:
       github.com/PTsolvers/JustRelax.jl get_git_tags.py:
         commands:
-        - /usr/bin/env sh .sqa/script.ready-corn-frog.sh
-        container: qc.ver_woolly-periwinkle-centipede
+        - /usr/bin/env sh .sqa/script.crappy-mauve-anteater.sh
+        container: qc.ver_hasty-vermilion-ocelot
 timeout: 5400
