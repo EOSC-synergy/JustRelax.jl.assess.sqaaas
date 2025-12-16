@@ -15,32 +15,28 @@ sqa_criteria:
     repos:
       github.com/PTsolvers/JustRelax.jl git:
         commands:
-        - /usr/bin/env sh .sqa/script.grumpy-olivine-lemming.sh
-        container: qc.acc_blurry-chartreuse-dhole
+        - /usr/bin/env sh .sqa/script.hazy-cerise-caterpillar.sh
+        container: qc.acc_greasy-cream-llama
   QC.Doc:
     repos:
       github.com/PTsolvers/JustRelax.jl find_doc_files.py:
         commands:
-        - /usr/bin/env sh .sqa/script.snappy-chestnut-rhinoceros.sh
-        container: qc.doc_hasty-buff-octopus
+        - /usr/bin/env sh .sqa/script.wheezy-aquamarine-hyrax.sh
+        container: qc.doc_wheezy-ivory-kakapo
       github.com/PTsolvers/JustRelax.jl git:
         commands:
-        - /usr/bin/env sh .sqa/script.snoopy-ochre-echidna.sh
-        container: qc.doc_flimsy-carmine-devil
-      github.com/PTsolvers/JustRelax.jl markdownlint:
-        commands:
-        - /usr/bin/env sh .sqa/script.pasty-tomato-whippet.sh
-        container: qc.doc_grumpy-ivory-corgi
+        - /usr/bin/env sh .sqa/script.shaky-copper-ray.sh
+        container: qc.doc_clammy-grey-hippopotamus
   QC.Lic:
     repos:
       github.com/PTsolvers/JustRelax.jl licensee:
         commands:
-        - /usr/bin/env sh .sqa/script.seedy-amethyst-serval.sh
-        container: qc.lic_wiggy-thistle-avocet
+        - /usr/bin/env sh .sqa/script.sickly-khaki-hare.sh
+        container: qc.lic_gamy-brown-gar
   QC.Ver:
     repos:
       github.com/PTsolvers/JustRelax.jl get_git_tags.py:
         commands:
-        - /usr/bin/env sh .sqa/script.frumpy-emerald-saola.sh
-        container: qc.ver_flimsy-cobalt-tortoise
+        - /usr/bin/env sh .sqa/script.lanky-carmine-discus.sh
+        container: qc.ver_bumpy-mauve-binturong
 timeout: 5400
