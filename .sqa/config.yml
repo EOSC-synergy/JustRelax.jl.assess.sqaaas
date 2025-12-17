@@ -15,34 +15,38 @@ sqa_criteria:
     repos:
       github.com/PTsolvers/JustRelax.jl git:
         commands:
-        - /usr/bin/env sh .sqa/script.woozy-cobalt-sparrow.sh
-        container: qc.acc_woolly-sepia-hummingbird
+        - /usr/bin/env sh .sqa/script.snippy-lime-quail.sh
+        container: qc.acc_surly-scarlet-quoll
   QC.Doc:
     repos:
       github.com/PTsolvers/JustRelax.jl find_doc_files.py:
         commands:
-        - /usr/bin/env sh .sqa/script.blurry-ochre-pig.sh
-        container: qc.doc_homely-russet-kangaroo
+        - /usr/bin/env sh .sqa/script.muzzy-brass-newt.sh
+        container: qc.doc_wiggy-lemon-whale
       github.com/PTsolvers/JustRelax.jl git:
         commands:
-        - /usr/bin/env sh .sqa/script.scummy-corn-dane.sh
-        container: qc.doc_tacky-tomato-affenpinscher
+        - /usr/bin/env sh .sqa/script.zippy-teal-labradoodle.sh
+        container: qc.doc_pretty-malachite-rhinoceros
+      github.com/PTsolvers/JustRelax.jl markdownlint:
+        commands:
+        - /usr/bin/env sh .sqa/script.bumpy-aqua-devil.sh
+        container: qc.doc_sickly-persimmon-giraffe
   QC.Lic:
     repos:
       github.com/PTsolvers/JustRelax.jl licensee:
         commands:
-        - /usr/bin/env sh .sqa/script.gummy-copper-chicken.sh
-        container: qc.lic_dorky-sangria-chin
+        - /usr/bin/env sh .sqa/script.muzzy-razzmatazz-wolverine.sh
+        container: qc.lic_geeky-amethyst-wrasse
   QC.Met:
     repos:
       github.com/PTsolvers/JustRelax.jl cff-converter-python:
         commands:
-        - /usr/bin/env sh .sqa/script.squirrely-denim-rhinoceros.sh
-        container: qc.met_thirsty-celadon-gecko
+        - /usr/bin/env sh .sqa/script.homely-ecru-spider.sh
+        container: qc.met_randy-purple-harrier
   QC.Ver:
     repos:
       github.com/PTsolvers/JustRelax.jl get_git_tags.py:
         commands:
-        - /usr/bin/env sh .sqa/script.muzzy-tangerine-caterpillar.sh
-        container: qc.ver_paltry-silver-labradoodle
+        - /usr/bin/env sh .sqa/script.fuzzy-burgundy-kangaroo.sh
+        container: qc.ver_fuzzy-aquamarine-mammoth
 timeout: 5400
