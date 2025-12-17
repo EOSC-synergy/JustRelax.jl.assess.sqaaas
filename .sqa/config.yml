@@ -15,34 +15,34 @@ sqa_criteria:
     repos:
       github.com/PTsolvers/JustRelax.jl git:
         commands:
-        - /usr/bin/env sh .sqa/script.boozy-celadon-affenpinscher.sh
-        container: qc.acc_cheeky-harlequin-wrasse
+        - /usr/bin/env sh .sqa/script.woozy-cobalt-sparrow.sh
+        container: qc.acc_woolly-sepia-hummingbird
   QC.Doc:
     repos:
       github.com/PTsolvers/JustRelax.jl find_doc_files.py:
         commands:
-        - /usr/bin/env sh .sqa/script.sunny-puce-bonobo.sh
-        container: qc.doc_leaky-lime-lionfish
+        - /usr/bin/env sh .sqa/script.blurry-ochre-pig.sh
+        container: qc.doc_homely-russet-kangaroo
       github.com/PTsolvers/JustRelax.jl git:
         commands:
-        - /usr/bin/env sh .sqa/script.gummy-olivine-badger.sh
-        container: qc.doc_sleepy-ochre-chimpanzee
+        - /usr/bin/env sh .sqa/script.scummy-corn-dane.sh
+        container: qc.doc_tacky-tomato-affenpinscher
   QC.Lic:
     repos:
       github.com/PTsolvers/JustRelax.jl licensee:
         commands:
-        - /usr/bin/env sh .sqa/script.lumpy-pumpkin-vulture.sh
-        container: qc.lic_foggy-orchid-capybara
+        - /usr/bin/env sh .sqa/script.gummy-copper-chicken.sh
+        container: qc.lic_dorky-sangria-chin
   QC.Met:
     repos:
       github.com/PTsolvers/JustRelax.jl cff-converter-python:
         commands:
-        - /usr/bin/env sh .sqa/script.silly-cardinal-fowl.sh
-        container: qc.met_scaly-cornflower-spider
+        - /usr/bin/env sh .sqa/script.squirrely-denim-rhinoceros.sh
+        container: qc.met_thirsty-celadon-gecko
   QC.Ver:
     repos:
       github.com/PTsolvers/JustRelax.jl get_git_tags.py:
         commands:
-        - /usr/bin/env sh .sqa/script.chummy-beige-sloth.sh
-        container: qc.ver_chewy-ochre-starfish
+        - /usr/bin/env sh .sqa/script.muzzy-tangerine-caterpillar.sh
+        container: qc.ver_paltry-silver-labradoodle
 timeout: 5400
